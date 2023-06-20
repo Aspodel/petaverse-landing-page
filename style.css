@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "ModernWarface";
+  src: url("ModernWarfare-OV7KP.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -50,6 +55,20 @@ body {
   50% {
     transform: scale(1.2);
   }
+}
+
+#intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "ModernWarface";
+  font-size: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f5f5f5;
+  text-shadow: 0 0 20px #f5f5f5;
 }
 
 #intro span {
@@ -193,8 +212,8 @@ body {
   content: "";
   position: absolute;
   inset: -30px 50px;
-  border-top: 4px solid #f5f5f5;
-  border-bottom: 4px solid #f5f5f5;
+  border-top: 4px solid #EC4A0A;
+  border-bottom: 4px solid #EC4A0A;
   transform: skewY(15deg);
   transition: 0.5s ease-in-out;
 }
@@ -208,8 +227,8 @@ body {
   content: "";
   position: absolute;
   inset: 70px -30px;
-  border-left: 4px solid #f5f5f5;
-  border-right: 4px solid #f5f5f5;
+  border-left: 4px solid #EC4A0A;
+  border-right: 4px solid #EC4A0A;
   transform: skew(15deg);
   transition: 0.5s ease-in-out;
 }
@@ -238,16 +257,16 @@ body {
   justify-content: center;
   height: 80px;
   width: 80px;
-  color: #f5f5f5;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.05), 0 0 0 3px #f5f5f5;
+  color: #EC4A0A;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.05), 0 0 0 3px #EC4A0A;
   font-size: 2.5rem;
   transition: 0.5s ease-in-out;
 }
 
 .services__card:hover .icon {
-  background: #f5f5f5;
+  background: #EC4A0A;
   color: #161623;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05), 0 0 0 300px #f5f5f5;
+  box-shadow: 0 0 0 4px #EC4A0A, 0 0 0 300px #EC4A0A;
 }
 
 .services__card h3 {
@@ -270,7 +289,7 @@ body {
 
 .services__card button {
   color: #161623;
-  background: #f5f5f5;
+  background: #EC4A0A;
   font-size: 1.1rem;
   padding: 10px 20px;
   border-radius: 3px;
@@ -286,7 +305,7 @@ body {
 
 .services__card:hover button {
   background: #161623;
-  color: #f5f5f5;
+  color: #EC4A0A;
 }
 
 #app-intro {
@@ -296,8 +315,8 @@ body {
     120deg,
     #ffffff,
     #ffffff 62%,
-    #354f88 62%,
-    #354f88 100%
+    #EC4A0A 62%,
+    #EC4A0A 100%
   );
   display: flex;
   align-items: center;
@@ -310,7 +329,7 @@ body {
 }
 
 .app-intro__content h2 {
-  color: #354f88;
+  color: #EC4A0A;
   font-size: 6rem;
 }
 .app-intro__content p {
@@ -331,7 +350,7 @@ body {
 
 .app-intro__content__download-btns button {
   color: #f5f5f5;
-  background: #354f88;
+  background: #EC4A0A;
   font-size: 1.05rem;
   padding: 10px 20px;
   border-radius: 4px;
