@@ -38,9 +38,9 @@ body {
 
 #intro {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
-  background: url("https://i.imgur.com/eYVmSgd.jpg");
+  background: url("Frame11.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -59,11 +59,11 @@ body {
 
 #intro h1 {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "ModernWarface";
-  font-size: 100px;
+  font-size: 8rem;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -212,8 +212,8 @@ body {
   content: "";
   position: absolute;
   inset: -30px 50px;
-  border-top: 4px solid #EC4A0A;
-  border-bottom: 4px solid #EC4A0A;
+  border-top: 4px solid #f5f5f5;
+  border-bottom: 4px solid #f5f5f5;
   transform: skewY(15deg);
   transition: 0.5s ease-in-out;
 }
@@ -227,8 +227,8 @@ body {
   content: "";
   position: absolute;
   inset: 70px -30px;
-  border-left: 4px solid #EC4A0A;
-  border-right: 4px solid #EC4A0A;
+  border-left: 4px solid #f5f5f5;
+  border-right: 4px solid #f5f5f5;
   transform: skew(15deg);
   transition: 0.5s ease-in-out;
 }
@@ -257,16 +257,16 @@ body {
   justify-content: center;
   height: 80px;
   width: 80px;
-  color: #EC4A0A;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.05), 0 0 0 3px #EC4A0A;
+  color: #f5f5f5;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.05), 0 0 0 3px #f5f5f5;
   font-size: 2.5rem;
   transition: 0.5s ease-in-out;
 }
 
 .services__card:hover .icon {
-  background: #EC4A0A;
-  color: #161623;
-  box-shadow: 0 0 0 4px #EC4A0A, 0 0 0 300px #EC4A0A;
+  background: #f5f5f5;
+  color: #ec4a0a;
+  box-shadow: 0 0 0 4px #f5f5f5, 0 0 0 300px #f5f5f5;
 }
 
 .services__card h3 {
@@ -289,7 +289,7 @@ body {
 
 .services__card button {
   color: #161623;
-  background: #EC4A0A;
+  background: #f5f5f5;
   font-size: 1.1rem;
   padding: 10px 20px;
   border-radius: 3px;
@@ -304,8 +304,8 @@ body {
 }
 
 .services__card:hover button {
-  background: #161623;
-  color: #EC4A0A;
+  background: #ec4a0a;
+  color: #f5f5f5;
 }
 
 #app-intro {
@@ -315,11 +315,12 @@ body {
     120deg,
     #ffffff,
     #ffffff 62%,
-    #EC4A0A 62%,
-    #EC4A0A 100%
+    #ec4a0a 62%,
+    #ec4a0a 100%
   );
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .app-intro__content {
@@ -329,7 +330,7 @@ body {
 }
 
 .app-intro__content h2 {
-  color: #EC4A0A;
+  color: #ec4a0a;
   font-size: 6rem;
 }
 .app-intro__content p {
@@ -350,7 +351,7 @@ body {
 
 .app-intro__content__download-btns button {
   color: #f5f5f5;
-  background: #EC4A0A;
+  background: #ec4a0a;
   font-size: 1.05rem;
   padding: 10px 20px;
   border-radius: 4px;
@@ -363,6 +364,110 @@ body {
 
 .app-intro__content__download-btns i {
   font-size: 1.4rem;
+}
+
+.app-intro__img {
+  /* margin-right: 10px; */
+}
+
+.app-intro__img img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.app-intro__dots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-intro__dots span {
+  height: 30px;
+  width: 10px;
+  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.app-intro__dots .active {
+  background: #f5f5f5;
+}
+
+#functions {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background: #f5f5f5;
+}
+
+.functions__info {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.functions__info img {
+  height: 500px;
+  width: 450px;
+  border-radius: 5px;
+}
+
+.functions__info .content {
+  display: flex;
+  gap: 20px;
+}
+
+.functions__info .main {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.functions__info .main h1 {
+  color: #ec4a0a;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+.functions__info .main p {
+  color: #111111;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.functions__info button {
+  color: #f5f5f5;
+  background: #ec4a0a;
+  padding: 11px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.functions__nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.functions__nav button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f5f5f5;
+  background: rgb(236, 74, 10, 0.5);
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.functions__nav .active {
+  background: #ec4a0a;
 }
 
 #members {
